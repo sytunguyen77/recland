@@ -3,6 +3,7 @@
    --secondary: #fe4c4c;
    --text: #171717;
    --gray: #999999;
+   --background: #f9f9f9;
    --light-gray: #e5e5e5;
    --green-text: #2ada66;
    --blue-text: #021a84;
@@ -16,6 +17,7 @@ html,
 body {
    font-family: "Inter", sans-serif;
    font-size: 14px;
+   background-color: var(--background);
 }
 
 .wrapper {
@@ -80,3 +82,9 @@ body {
    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 /* end Button styles */
+
+.heading {
+   color: #021a84;
+   font-size: 34px;
+   font-weight: 700;
+}
