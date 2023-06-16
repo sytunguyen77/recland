@@ -2,11 +2,12 @@
    --primary: #021a84;
    --secondary: #fe4c4c;
    --text: #171717;
+   --dark-primary: #010d42;
    --gray: #999999;
    --background: #f9f9f9;
    --light-gray: #e5e5e5;
-   --green-text: #2ada66;
-   --blue-text: #021a84;
+   --green-text: #156d33;
+   --blue-text: #010d42;
    --red-text: #e5532a;
    --green-gradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #2ada66;
    --purple-gradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #021a84;
@@ -84,7 +85,21 @@ body {
 /* end Button styles */
 
 .heading {
-   color: #021a84;
+   color: var(--dark-primary);
    font-size: 34px;
    font-weight: 700;
+}
+
+.btn-scrollTop {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color: var(--primary);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   z-index: 9999;
+   right: 40px;
+   bottom: 40px;
 }
